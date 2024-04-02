@@ -14,9 +14,14 @@ public class ExceptionFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         try{
             chain.doFilter(request, response);
+        } catch(IllegalArgumentException e){
+            httpResponse.setStatus(HttpStatus.BAD_REQUEST.value());
+            return;
         } catch(RuntimeException e){
             httpResponse.setStatus(HttpStatus.BAD_REQUEST.value());
             return;
+        } finally {
+            log.info("Dispatcher Type: [{}]", request.getDispatcherType());
         }
     }
 }
