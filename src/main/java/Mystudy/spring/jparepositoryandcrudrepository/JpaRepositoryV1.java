@@ -1,4 +1,4 @@
-package Mystudy.spring.JpaRepositoryAndCrudRepository;
+package Mystudy.spring.jparepositoryandcrudrepository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

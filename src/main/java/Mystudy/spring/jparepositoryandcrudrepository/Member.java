@@ -1,4 +1,4 @@
-package Mystudy.spring.JpaRepositoryAndCrudRepository;
+package Mystudy.spring.jparepositoryandcrudrepository;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

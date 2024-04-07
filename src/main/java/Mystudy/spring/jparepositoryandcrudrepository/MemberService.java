@@ -1,4 +1,4 @@
-package Mystudy.spring.JpaRepositoryAndCrudRepository;
+package Mystudy.spring.jparepositoryandcrudrepository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
